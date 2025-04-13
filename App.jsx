@@ -100,7 +100,9 @@ function App() {
           {models.map(model => (
             <button
               key={model}
-              className={\`w-full px-4 py-2 text-left rounded transition \${selectedModel === model ? 'bg-teal-600' : 'bg-gray-800 hover:bg-gray-700'}\`}
+              className={`w-full px-4 py-2 text-left rounded transition ${
+                selectedModel === model ? 'bg-teal-600' : 'bg-gray-800 hover:bg-gray-700'
+              }`}
               onClick={() => setSelectedModel(model)}
             >
               {model}
